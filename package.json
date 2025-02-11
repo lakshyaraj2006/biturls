@@ -1,0 +1,17 @@
+{
+  "name": "biturls",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "license": "MIT",
+  "scripts": {
+     "dev:server": "npm run dev --workspace=packages/server",
+     "dev:client": "npm run dev --workspace=packages/client",
+     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "dependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
