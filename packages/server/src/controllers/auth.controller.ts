@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { SignInCredentials, SignUpCredentials } from "../types/user-credentials";
-import { User } from "../models/user.model";
+import { SignInCredentials, SignUpCredentials } from "../types/user-credentials.js";
+import { User } from "../models/user.model.js";
 import jwt from "jsonwebtoken";
 
 export const createUser = async (req: Request, res: Response) => {

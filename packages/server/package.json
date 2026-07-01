@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "private": true,
   "license": "MIT",
+  "type": "module",
   "scripts": {
     "dev": "nodemon ./src/server.ts",
-    "build": "npx tsc --build --watch",
+    "build": "npx tsc --build",
+    "build:watch": "npx tsc --build --watch",
     "start": "node dist/server.js"
   },
   "dependencies": {

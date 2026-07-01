@@ -1,8 +1,10 @@
+/// <reference path="./types/custom.d.ts" />
+
 import express from "express";
 import "dotenv/config";
-import { authRouter } from "./routes/auth.route";
-import { urlsRouter } from "./routes/urls.route";
-import { dbConnect } from "./lib/db";
+import { authRouter } from "./routes/auth.route.js";
+import { urlsRouter } from "./routes/urls.route.js";
+import { dbConnect } from "./lib/db/index.js";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 

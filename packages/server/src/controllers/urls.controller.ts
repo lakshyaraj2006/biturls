@@ -1,6 +1,6 @@
 import { Request, Response } from "express";
-import { Url } from "../models/urls.model";
-import { UrlDetails } from "../types/url-details";
+import { Url } from "../models/urls.model.js";
+import { UrlDetails } from "../types/url-details.js";
 import { nanoid } from "nanoid";
 
 export const getUrls = async (req: Request, res: Response) => {

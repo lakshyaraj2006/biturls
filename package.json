@@ -7,11 +7,17 @@
   ],
   "license": "MIT",
   "scripts": {
-     "dev:server": "npm run dev --workspace=packages/server",
-     "dev:client": "npm run dev --workspace=packages/client",
-     "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+    "dev:server": "npm run dev --workspace=packages/server",
+    "dev:client": "npm run dev --workspace=packages/client",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "build:server": "npm run build --workspace=packages/server",
+    "build:client": "npm run build --workspace=packages/client",
+    "build": "concurrently \"npm run build:server\" \"npm run build:client\""
   },
   "dependencies": {
     "concurrently": "^9.1.2"
+  },
+  "devDependencies": {
+    "vite": "^6.1.0"
   }
 }
